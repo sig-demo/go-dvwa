@@ -22,7 +22,7 @@ jobs:
     # Download dependencies
     - name: Restore
       run: |
-        go mod tidy
+        go mod download
       
     # Perform Polaris Analysis 
     - name: Polaris (SAST)
