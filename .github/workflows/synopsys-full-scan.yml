@@ -23,7 +23,6 @@ jobs:
     - name: Restore
       run: |
         go mod download
-        go get github.com/govwa/util/config
       
     # Perform Polaris Analysis 
     - name: Polaris (SAST)
