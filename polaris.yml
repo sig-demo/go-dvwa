@@ -41,7 +41,9 @@ capture:
       - directory: ${project.projectDir}
 analyze:
   mode: central
+  coverity:
+    cov-analyze: ["--all", "--enable-audit-mode", "--webapp-security"]
 install:
   coverity:
-    version: 2021.03
+    version: default
 serverUrl: https://demo.polaris.synopsys.com
